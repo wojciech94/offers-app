@@ -1,13 +1,10 @@
-import Image from 'next/image'
+import { Card } from './components/Card/Card'
 
 export default function Home() {
 	return (
-		<div>
-			<header></header>
-			<main className='flex flex-col gap-8 row-start-2 items-center sm:items-start'>
-				<Image className='dark:invert' src='/next.svg' alt='Next.js logo' width={180} height={38} priority />
-			</main>
-			<footer className='row-start-3 flex gap-6 flex-wrap items-center justify-center'></footer>
+		<div className='flex flex-col gap-4'>
+			<h1 className='text-xl'>Witaj na stronie!</h1>
+			<Card hasIcon={true}>Zawartość tymczasowo niedostępna</Card>
 		</div>
 	)
 }
