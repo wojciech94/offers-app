@@ -55,8 +55,8 @@ export const Pagination: React.FC<Props> = ({
 					name='paginationSelect'
 					onChange={e => setItemsPerPage(Number.parseInt(e.target.value))}
 					id='paginationSelect'>
-					{options.map(option => (
-						<option className='dark:text-slate-900' value={option}>
+					{options.map((option, id) => (
+						<option key={id} className='dark:text-slate-900' value={option}>
 							{option}
 						</option>
 					))}
